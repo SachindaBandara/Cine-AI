@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "./Header";
-import useNowPlayingMovies  from "../hooks/useNowPlayingMovies";
+import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
+import MainContainer from "./MainContainer";
+import SecondaryContainer from "./SecondaryContainer";
 
 const Browse = () => {
   // Fetch data from movie api and update store
@@ -9,7 +11,8 @@ const Browse = () => {
   return (
     <div>
       <Header />
-      <p>browse</p>
+      <MainContainer />
+      <SecondaryContainer />
     </div>
   );
 };
