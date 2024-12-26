@@ -9,6 +9,7 @@ import {
 } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { LOGIN_BACKGROUND, USER_AVATER } from "../utils/constants";
 
 const Login = () => {
   const [isSignInForm, setIsSignInFrom] = useState(true);
@@ -49,7 +50,7 @@ const Login = () => {
           const user = userCredential.user;
           updateProfile(user, {
             displayName: name.current.value,
-            photoURL: "https://avatars.githubusercontent.com/u/118462732?v=4",
+            photoURL: USER_AVATER,
           })
             .then(() => {
               // Profile updated!
@@ -101,7 +102,7 @@ const Login = () => {
 
       <div className="">
         <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/150c4b42-11f6-4576-a00f-c631308b1e43/web/US-en-20241216-TRIFECTA-perspective_16158377-32b2-42cc-ba71-15929be7d1f2_medium.jpg"
+          src={LOGIN_BACKGROUND}
           alt="backgroundImg"
         />
       </div>
