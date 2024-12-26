@@ -5,7 +5,8 @@ import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  // StrictMode ==> happen two times in the local development / check rendering cycle that has any inconsistance
+  <React.StrictMode> 
     <App />
   </React.StrictMode>
 );
