@@ -81,6 +81,7 @@ const Header = () => {
           >
             {showGptSearch ? "Home" : "GPT Search"}
           </button>
+          
           <img className="w-8 h-8" src={user?.photoURL} alt="user Icon" />
 
           <button onClick={handleSignOut} className="font-bold text-white">
