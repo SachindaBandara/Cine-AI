@@ -97,10 +97,10 @@ const Login = () => {
   };
 
   return (
-    <div className="absolute">
+    <div className="">
       <Header />
 
-      <div className="">
+      <div className="absolute -z-20">
         <img
           src={LOGIN_BACKGROUND}
           alt="backgroundImg"
