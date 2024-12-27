@@ -4,11 +4,13 @@ import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
 import MainContainer from "./MainContainer";
 import SecondaryContainer from "./SecondaryContainer";
 import usePopularMovies from "../hooks/usePopularMovies";
+import useTopRatedMovies from "../hooks/useTopRatedMovies";
 
 const Browse = () => {
   // Fetch data from movie api and update store
   useNowPlayingMovies();
-  usePopularMovies()
+  usePopularMovies();
+  useTopRatedMovies();
 
   return (
     <div>
