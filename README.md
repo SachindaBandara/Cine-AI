@@ -1,1 +1,1 @@
-# Netfilx-GPT
+# Cine-AI
