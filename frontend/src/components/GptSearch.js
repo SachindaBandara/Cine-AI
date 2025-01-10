@@ -6,11 +6,13 @@ import { LOGIN_BACKGROUND } from "../utils/constants";
 const GptSearch = () => {
   return (
     <div>
-      <div className="absolute -z-20">
-        <img src={LOGIN_BACKGROUND} alt="backgroundImg" />
+      <div className="fixed -z-20">
+        <img className="h-screen object-cover" src={LOGIN_BACKGROUND} alt="backgroundImg" />
       </div>
-      <GptSearchBar />
-      <GptMovieSuggestions />
+      <div className="">
+        <GptSearchBar />
+        <GptMovieSuggestions />
+      </div>
     </div>
   );
 };

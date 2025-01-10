@@ -12,7 +12,7 @@ export const API_OPTIONS = {
   headers: {
     accept: "application/json",
     Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmNzJkMjNlZTI4NmE4YTNlOTg4NWIwNzhlODQ3NzNiOSIsIm5iZiI6MTczNTIzMTc0MS4wOTQsInN1YiI6IjY3NmQ4OGZkNjJiYTMxMGZjMDEyOTVhNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Cn-tPPXTnRWSN1hHQU5U9kXEP-s8KkdXVn_Gbr6fd0E",
+      "Bearer " + process.env.REACT_APP_TMDB_KEY,
   },
 };
 
@@ -23,3 +23,6 @@ export const SUPPORTED_LANGUAGES = [
   { identifier: "sinhala", name: "Sinhala" },
   { identifier: "tamil", name: "Tamil" },
 ];
+
+
+export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;
